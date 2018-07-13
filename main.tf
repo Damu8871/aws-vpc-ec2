@@ -26,7 +26,7 @@ module "ec2" {
   instance_type                        = "t2.micro"
   disable_api_termination              = "false"	#If true, enables EC2 Instance Termination Protection
   instance_initiated_shutdown_behavior = "stop" 
-  key_name                             = "damodaran_test"
+  key_name                             = ""
   monitoring                           = "false" 	#If true, the launched EC2 instance will have detailed monitoring enabled
   subnet_id                            = "${module.vpc.subnet_id}"
   associate_public_ip_address          = "true"		#Associate a public ip address with an instance in a VPC. Boolean value.
